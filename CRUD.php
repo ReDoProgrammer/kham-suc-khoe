@@ -60,7 +60,11 @@ class Crud
     $output = '';
     while($row = mysqli_fetch_object($result))
     {
+
       $output .= '<tr>';
+      $output .= '<td>';
+      $output .= '<button class ="btnSua btn btn-warning" id="'.$row->ma_nv.'">Sửa</button>';
+      $output .= '</td>';
       $output .= '<td>';
       $output .= $row->ho_ten;
       $output .= '</td>';
@@ -203,7 +207,8 @@ class Crud
       $output .= '</td>';
       $output .= '<td>';
       $output .= $row->bs_kl;
-      $output .= '</td>'; 
+      $output .= '</td>';
+
 
       $output .= '</tr>';
     }

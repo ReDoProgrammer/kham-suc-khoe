@@ -2,6 +2,16 @@ $('#btnXacNhan').click(async function(e){
   e.preventDefault();
   let action = "Insert";
   let nam = new Date().getFullYear();
+
+  // let tien_su_benh = $('#tien_su_benh').val();
+  // let chieu_cao = $('#chieu_cao').val();
+  // let can_nang =  $('#can_nang').val();
+  // let bmi = $('#bmi').val();
+  // let mach = $('#mach').val();
+  // let huyet_ap = $('#huyet_ap').val();
+  // let tl_phan_loai= $('#tl_phan_loai option:selected').text();
+
+
   let  tuan_hoan_kham = $('#tuan_hoan_kham').val();
   let xl_tuan_hoan = $('#xl_tuan_hoan option:selected').text();
   let bs_tuan_hoan = $('#bs_tuan_hoan option:selected').text();
@@ -57,9 +67,16 @@ $('#btnXacNhan').click(async function(e){
   let xl_rhm = $('#xl_rhm option:selected').text();
   let bs_rhm = $('#bs_rhm option:selected').text();
 
+  // let da_lieu_kham = $('#da_lieu_kham').val();
+  // let xl_da_lieu = $('#xl_da_lieu option:selected').text();
+  // let bs_da_lieu = $('#bs_da_lieu option:selected').text();
+
   let kq = $('#kq').val();
   let dg = $('#dg').val();
 
+  //
+  // let phan_loai = $('#phan_loai option:selected').text();
+  // let cac_benh_tat = $('#cac_benh_tat').val();
   let bs_kl = $('#bs_kl option:selected').text();
 
 
@@ -70,6 +87,13 @@ $('#btnXacNhan').click(async function(e){
       action:action,
       nam:nam,
       ma_nv:ma_nv,
+      // tien_su_benh:tien_su_benh,
+      // chieu_cao:chieu_cao,
+      // can_nang:can_nang,
+      // bmi:bmi,
+      // mach:mach,
+      // huyet_ap:huyet_ap,
+      // tl_phan_loai:tl_phan_loai,
       tuan_hoan_kham:tuan_hoan_kham,
       xl_tuan_hoan:xl_tuan_hoan,
       bs_tuan_hoan:bs_tuan_hoan,
@@ -113,8 +137,15 @@ $('#btnXacNhan').click(async function(e){
       rhm_benh:rhm_benh,
       xl_rhm:xl_rhm,
       bs_rhm:bs_rhm,
+
+      // da_lieu_kham:da_lieu_kham,
+      // xl_da_lieu:xl_da_lieu,
+      // bs_da_lieu:bs_da_lieu,
+
       kq:kq,
       dg:dg,
+      // phan_loai:phan_loai,
+      // cac_benh_tat:cac_benh_tat,
       bs_kl:bs_kl
     },
     success:function(data)

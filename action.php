@@ -22,6 +22,14 @@ if(isset($_POST["action"]))
     $nam =  $_POST["nam"];
     $ma_nv=  $_POST["ma_nv"];
 
+    // $tien_su_benh $_POST["tien_su_benh"];
+    // $chieu_cao =  $_POST["chieu_cao"];
+    // $can_nang =  $_POST["can_nang"];
+    // $bmi =  $_POST["bmi"];
+    // $mach =  $_POST["mach"];
+    // $huyet_ap =  $_POST["huyet_ap"];
+    // $tl_phan_loai =  $_POST["tl_phan_loai"];
+
     $tuan_hoan_kham =  $_POST["tuan_hoan_kham"];
     $xl_tuan_hoan =  $_POST["xl_tuan_hoan"];
     $bs_tuan_hoan =  $_POST["bs_tuan_hoan"];
@@ -81,27 +89,28 @@ if(isset($_POST["action"]))
     $bs_kl =  $_POST["bs_kl"];
 
 
-    try {
-      $query = "INSERT INTO tbl_kham_suc_khoe ".
-      "(nam,ma_nv,tuan_hoan_kham,xl_tuan_hoan,bs_tuan_hoan,ho_hap_kham,xl_ho_hap,bs_ho_hap,tieu_hoa_kham,xl_tieu_hoa,bs_tieu_hoa,".
-      "than_tiet_nieu_kham,xl_than_tiet_nieu,bs_than_tiet_nieu,noi_tiet_kham,xl_noi_tiet,bs_noi_tiet,co_xuong_khop_kham,".
-      "xl_co_xuong_khop,bs_co_xuong_khop,than_kinh_kham,xl_than_kinh,bs_than_kinh,tam_than_kham,xl_tam_than,bs_tam_than,kk_mp_kham,kk_mt_kham,ck_mp_kham,ck_mt_kham,benh_mat_kham,xl_mat,bs_mat,".
-      "tt_nt_kham,tt_nth_kham,tp_nt_kham,tp_nth_kham,tmh_benh,xl_tmh,bs_tmh,rhm_ht,rhm_hd,rhm_benh,xl_rhm,bs_rhm,kq,dg,bs_kl)".
-      " VALUES ('".$nam."', '".$ma_nv."', '".$tuan_hoan_kham."','".$xl_tuan_hoan."','".$bs_tuan_hoan."','".$ho_hap_kham."','".$xl_ho_hap."'".
-      ",'".$bs_ho_hap."','".$tieu_hoa_kham."','".$xl_tieu_hoa."','".$bs_tieu_hoa."','".$than_tiet_nieu_kham."','".$xl_than_tiet_nieu."',".
-      "'".$bs_than_tiet_nieu."','".$noi_tiet_kham."','".$xl_noi_tiet."','".$bs_noi_tiet."','".$co_xuong_khop_kham."','".$xl_co_xuong_khop."','".$bs_co_xuong_khop."',".
-      "'".$than_kinh_kham."','".$xl_than_kinh."','".$bs_than_kinh."','".$tam_than_kham."','".$xl_tam_than."','".$bs_tam_than."','".$kk_mp_kham."',".
-      "'".$kk_mt_kham."','".$ck_mp_kham."','".$ck_mt_kham."','".$benh_mat_kham."','".$xl_mat."','".$bs_mat."','".$tt_nt_kham."','".$tt_nth_kham."','".$tp_nt_kham."',".
-      "'".$tp_nth_kham."','".$tmh_benh."','".$xl_tmh."','".$bs_tmh."','".$rhm_ht."','".$rhm_hd."','".$rhm_benh."','".$xl_rhm."','".$bs_rhm."','".$kq."','".$dg."','".$bs_kl."')";
-      $result = $object->execute_query($query);
-      if($result == 1){
-        echo 'Khám thành công';
-      }else{
-        echo 'Khám thất bại';
-      }
-    } catch (\Exception $e) {
-        echo 'insert lỗi: '.$e;
-    }
+    // try {
+    //   $query = "INSERT INTO tbl_kham_suc_khoe ".
+    //   "(nam,ma_nv,tien_su_benh,chieu_cao,can_nang,bmi,mach,huyet_ap,tl_phan_loai,tuan_hoan_kham,xl_tuan_hoan,bs_tuan_hoan,ho_hap_kham,xl_ho_hap,bs_ho_hap,tieu_hoa_kham,xl_tieu_hoa,bs_tieu_hoa,".
+    //   "than_tiet_nieu_kham,xl_than_tiet_nieu,bs_than_tiet_nieu,noi_tiet_kham,xl_noi_tiet,bs_noi_tiet,co_xuong_khop_kham,".
+    //   "xl_co_xuong_khop,bs_co_xuong_khop,than_kinh_kham,xl_than_kinh,bs_than_kinh,tam_than_kham,xl_tam_than,bs_tam_than,kk_mp_kham,kk_mt_kham,ck_mp_kham,ck_mt_kham,benh_mat_kham,xl_mat,bs_mat,".
+    //   "tt_nt_kham,tt_nth_kham,tp_nt_kham,tp_nth_kham,tmh_benh,xl_tmh,bs_tmh,rhm_ht,rhm_hd,rhm_benh,xl_rhm,bs_rhm,kq,dg,bs_kl)".
+    //   " VALUES ('".$nam."', '".$ma_nv."','".$tien_su_benh."','".$chieu_cao."','".$can_nang."','".$bmi."','".$mach."','".$huyet_ap."','".$tl_phan_loai."','".$tuan_hoan_kham."','".$xl_tuan_hoan."'".
+    //   ",'".$bs_tuan_hoan."','".$ho_hap_kham."','".$xl_ho_hap."'".
+    //   ",'".$bs_ho_hap."','".$tieu_hoa_kham."','".$xl_tieu_hoa."','".$bs_tieu_hoa."','".$than_tiet_nieu_kham."','".$xl_than_tiet_nieu."',".
+    //   "'".$bs_than_tiet_nieu."','".$noi_tiet_kham."','".$xl_noi_tiet."','".$bs_noi_tiet."','".$co_xuong_khop_kham."','".$xl_co_xuong_khop."','".$bs_co_xuong_khop."',".
+    //   "'".$than_kinh_kham."','".$xl_than_kinh."','".$bs_than_kinh."','".$tam_than_kham."','".$xl_tam_than."','".$bs_tam_than."','".$kk_mp_kham."',".
+    //   "'".$kk_mt_kham."','".$ck_mp_kham."','".$ck_mt_kham."','".$benh_mat_kham."','".$xl_mat."','".$bs_mat."','".$tt_nt_kham."','".$tt_nth_kham."','".$tp_nt_kham."',".
+    //   "'".$tp_nth_kham."','".$tmh_benh."','".$xl_tmh."','".$bs_tmh."','".$rhm_ht."','".$rhm_hd."','".$rhm_benh."','".$xl_rhm."','".$bs_rhm."','".$kq."','".$dg."','".$bs_kl."')";
+    //   $result = $object->execute_query($query);
+    //   if($result == 1){
+    //     echo 'Khám thành công';
+    //   }else{
+    //     echo 'Khám thất bại';
+    //   }
+    // } catch (\Exception $e) {
+    //     echo 'insert lỗi: '.$e;
+    // }
 
   }
 }

@@ -138,6 +138,9 @@
         $('#kqksk').append(data);
       }
     });
+    $('.btnSua').click(function(){
+      alert(1);
+    })
   }
 </script>
 </body>
