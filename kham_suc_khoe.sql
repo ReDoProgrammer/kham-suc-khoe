@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 30, 2020 at 06:13 PM
+-- Generation Time: Jul 31, 2020 at 05:29 AM
 -- Server version: 10.3.16-MariaDB
 -- PHP Version: 7.3.7
 
@@ -50,6 +50,13 @@ INSERT INTO `tbl_bac_si_kham` (`ma_nv`, `ho_ten`) VALUES
 CREATE TABLE `tbl_kham_suc_khoe` (
   `nam` int(11) NOT NULL,
   `ma_nv` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `tien_su_benh` varchar(250) COLLATE utf8_unicode_ci NOT NULL,
+  `chieu_cao` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `can_nang` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `bmi` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `mach` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `huyet_ap` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `tl_phan_loai` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
   `tuan_hoan_kham` varchar(250) COLLATE utf8_unicode_ci NOT NULL,
   `xl_tuan_hoan` varchar(11) COLLATE utf8_unicode_ci NOT NULL,
   `bs_tuan_hoan` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
@@ -92,18 +99,16 @@ CREATE TABLE `tbl_kham_suc_khoe` (
   `rhm_hd` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
   `rhm_benh` varchar(250) COLLATE utf8_unicode_ci NOT NULL,
   `xl_rhm` varchar(11) COLLATE utf8_unicode_ci NOT NULL,
+  `da_lieu_kham` varchar(150) COLLATE utf8_unicode_ci NOT NULL,
+  `xl_da_lieu` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `bs_da_lieu` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
   `bs_rhm` varchar(40) COLLATE utf8_unicode_ci NOT NULL,
   `kq` text COLLATE utf8_unicode_ci NOT NULL,
   `dg` text COLLATE utf8_unicode_ci NOT NULL,
+  `phan_loai` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `cac_benh_tat` varchar(250) COLLATE utf8_unicode_ci NOT NULL,
   `bs_kl` varchar(40) COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
-
---
--- Dumping data for table `tbl_kham_suc_khoe`
---
-
-INSERT INTO `tbl_kham_suc_khoe` (`nam`, `ma_nv`, `tuan_hoan_kham`, `xl_tuan_hoan`, `bs_tuan_hoan`, `ho_hap_kham`, `xl_ho_hap`, `bs_ho_hap`, `tieu_hoa_kham`, `xl_tieu_hoa`, `bs_tieu_hoa`, `than_tiet_nieu_kham`, `xl_than_tiet_nieu`, `bs_than_tiet_nieu`, `noi_tiet_kham`, `xl_noi_tiet`, `bs_noi_tiet`, `co_xuong_khop_kham`, `xl_co_xuong_khop`, `bs_co_xuong_khop`, `than_kinh_kham`, `xl_than_kinh`, `bs_than_kinh`, `tam_than_kham`, `xl_tam_than`, `bs_tam_than`, `kk_mp_kham`, `kk_mt_kham`, `ck_mp_kham`, `ck_mt_kham`, `benh_mat_kham`, `xl_mat`, `bs_mat`, `tt_nt_kham`, `tt_nth_kham`, `tp_nt_kham`, `tp_nth_kham`, `tmh_benh`, `xl_tmh`, `bs_tmh`, `rhm_ht`, `rhm_hd`, `rhm_benh`, `xl_rhm`, `bs_rhm`, `kq`, `dg`, `bs_kl`) VALUES
-(2020, 'baynd', 'T1,T2 đều khỏe', 'I', 'Nguyễn Thị Thảo Như', 'Phổi không nghe ran', 'I', 'Nguyễn Thị Thảo Như', 'bụng mềm', 'I', 'Nguyễn Thị Thảo Như', 'chạm thận....???', 'I', 'Nguyễn Thị Thảo Như', 'bình thường', 'I', 'Nguyễn Thị Thảo Như', 'bình thường', 'I', 'Nguyễn Thị Thảo Như', 'tỉnh táo', 'I', 'Nguyễn Thị Thảo Như', 'tỉnh táo', 'I', 'Nguyễn Thị Thảo Như', '10/10', '10/10', '', '', 'không', 'I', 'Nguyễn Thị Thảo Như', '5m', '0.5m', '5m', '0.5m', 'không', 'I', 'Nguyễn Thị Thảo Như', 'sức nhai: 100%', 'sức nhai: 100%', 'không', 'I', 'Nguyễn Thị Thảo Như', '432421', '4123421', 'Nguyễn Thị Thảo Như');
 
 -- --------------------------------------------------------
 
