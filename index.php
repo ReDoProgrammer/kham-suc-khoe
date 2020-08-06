@@ -4,18 +4,20 @@
   <meta charset="utf-8">
   <title></title>
   <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <script src="./assets/js/jquery-3.5.1.js" charset="utf-8"></script>
+  <script src="./assets/js/bootstrap.min.js" charset="utf-8"></script>
 </head>
 <body>
   <?php
   header("Content-type: text/html; charset=utf-8");
-  include 'CRUD.php';
+  include './xu-ly/CRUD.php';
   $db = new Crud();
 
   ?>
   <div class="container">
     <div style="width:100%">
-      
+
       <a href="ket_qua.php" class="btn btn-success" style="float:right; margin-top:10px; margin-bottom:10px;">Kết quả khám bệnh</a>
     </div>
     <table class="table table-striped">
@@ -48,20 +50,16 @@
   </body>
 
   <?php
-
   include 'modal.php';
   ?>
   <footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
     <script type="text/javascript">
     var ma_nv;
     $(document).ready(function(){
       $('.btnKham').click(function(){
         ma_nv =  $(this).attr('id');
-        $('#ma_nv').empty();
-        $('#ma_nv').append(ma_nv);
+        // $('#ma_nv').empty();
+        $('#ma_nv').val(ma_nv);
         var ho_ten = $(this).attr('data-hoten');
         $("#modalKham").modal();
         $('#ho_ten').empty();
@@ -71,35 +69,8 @@
       });
     });
 
-
-    function load_bacsi(){
-      var action = "get_dsbs";
-      $.ajax({
-        url:"action.php",
-        method:"POST",
-        data:{action:action},
-        success:function(data){
-          $('.dsbs').empty();
-          $('.dsbs').append(data);
-        }
-      });
-    }
-
-    function load_xeploai(){
-      let action = "get_xeploai";
-      $.ajax({
-        url:"action.php",
-        method:"POST",
-        data:{action:action},
-        success:function(data){
-          $('.xl').empty();
-          $('.xl').append(data);
-        }
-      });
-    }
     </script>
-    <script type="text/javascript" src="kham.js">
-    </script>
+    <script src="./assets/js/kham.js" charset="utf-8"></script>
 
 
 

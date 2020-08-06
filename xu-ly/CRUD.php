@@ -215,6 +215,71 @@ class Crud
     return $output;
   }
 
+  public function kham(
+  $nam,$ma_nv,$tien_su_benh,$chieu_cao,$can_nang,$bmi,$mach,$huyet_ap,$tl_phan_loai,
+  $tuan_hoan_kham,$xl_tuan_hoan,$bs_tuan_hoan,
+  $ho_hap_kham,$xl_ho_hap,$bs_ho_hap,
+  $tieu_hoa_kham,$xl_tieu_hoa,$bs_tieu_hoa,
+  $than_tiet_nieu_kham,$xl_than_tiet_nieu,$bs_than_tiet_nieu,
+  $noi_tiet_kham,$xl_noi_tiet,$bs_noi_tiet,
+  $co_xuong_khop_kham,$xl_co_xuong_khop,$bs_co_xuong_khop,
+  $than_kinh_kham,$xl_than_kinh,$bs_than_kinh,
+  $tam_than_kham,$xl_tam_than,$bs_tam_than,
+  $kk_mp_kham,$kk_mt_kham,$ck_mp_kham,$ck_mt_kham,$benh_mat_kham,$xl_mat,$bs_mat,
+  $tt_nt_kham,$tt_nth_kham,$tp_nt_kham,$tp_nth_kham,$tmh_benh,$xl_tmh,$bs_tmh,
+  $rhm_ht,$rhm_hd,$rhm_benh,$xl_rhm,$bs_rhm,
+  $da_lieu_kham,$xl_da_lieu,$bs_da_lieu,
+  $kq,$dg,$phan_loai,$cac_benh_tat,$bs_kl){
+    $sql = "select count(*) from tbl_kham_suc_khoe where ma_nv = '".$ma_nv."' and nam = '".$nam."'";
+    $result = $this->execute_query($sql);
+    if($result == 0){
+      $sql = "INSERT INTO `tbl_kham_suc_khoe` (`nam`, `ma_nv`, `tien_su_benh`, `chieu_cao`, `can_nang`, `bmi`, `mach`, `huyet_ap`, `tl_phan_loai`,"
+        ." `tuan_hoan_kham`, `xl_tuan_hoan`, `bs_tuan_hoan`,"
+        ." `ho_hap_kham`, `xl_ho_hap`, `bs_ho_hap`,"
+        ." `tieu_hoa_kham`, `xl_tieu_hoa`, `bs_tieu_hoa`,"
+        ." `than_tiet_nieu_kham`, `xl_than_tiet_nieu`, `bs_than_tiet_nieu`,"
+        ." `noi_tiet_kham`, `xl_noi_tiet`, `bs_noi_tiet`,"
+        ." `co_xuong_khop_kham`, `xl_co_xuong_khop`, `bs_co_xuong_khop`,"
+        ." `than_kinh_kham`, `xl_than_kinh`, `bs_than_kinh`,"
+        ." `tam_than_kham`, `xl_tam_than`, `bs_tam_than`,"
+        ." `kk_mp_kham`, `kk_mt_kham`, `ck_mp_kham`, `ck_mt_kham`, `benh_mat_kham`, `xl_mat`, `bs_mat`,"
+        ." `tt_nt_kham`, `tt_nth_kham`, `tp_nt_kham`, `tp_nth_kham`, `tmh_benh`, `xl_tmh`, `bs_tmh`,"
+        ." `rhm_ht`, `rhm_hd`, `rhm_benh`, `xl_rhm`,`bs_rhm`,"
+        ."`da_lieu_kham`, `xl_da_lieu`, `bs_da_lieu`,"
+        ."`kq`, `dg`, `phan_loai`, `cac_benh_tat`, `bs_kl`) "
+        ."VALUES ('".$nam."', '".$ma_nv."', '".$tien_su_benh."', '".$chieu_cao."', '".$can_nang."', '".$bmi."', '".$mach."', '".$huyet_ap."', '".$tl_phan_loai."',"
+        ." '".$tuan_hoan_kham."', '".$xl_tuan_hoan."', '".$bs_tuan_hoan."',"
+        ." '".$ho_hap_kham."', '".$xl_ho_hap."', '".$bs_ho_hap."',"
+        ." '".$tieu_hoa_kham."', '".$xl_tieu_hoa."', '".$bs_tieu_hoa."',"
+        ." '".$than_tiet_nieu_kham."', '".$xl_than_tiet_nieu."', '".$bs_than_tiet_nieu."',"
+        ." '".$noi_tiet_kham."', '".$xl_noi_tiet."', '".$bs_noi_tiet."',"
+        ." '".$co_xuong_khop_kham."', '".$xl_co_xuong_khop."', '".$bs_co_xuong_khop."',"
+        ." '".$than_kinh_kham."', '".$xl_than_kinh."', '".$bs_than_kinh."',"
+        ." '".$tam_than_kham."', '".$xl_tam_than."', '".$bs_tam_than."',"
+        ." '".$kk_mp_kham."', '".$kk_mt_kham."', '".$ck_mp_kham."', '".$ck_mt_kham."', '".$benh_mat_kham."', '".$xl_mat."', '".$bs_mat."',"
+        ." '".$tt_nt_kham."', '".$tt_nth_kham."', '".$tp_nt_kham."', '".$tp_nth_kham."', '".$tmh_benh."', '".$xl_tmh."', '".$bs_tmh."',"
+        ." '".$rhm_ht."', '".$rhm_hd."', '".$rhm_benh."', '".$xl_rhm."', '".$bs_rhm."',"
+        ." '".$da_lieu_kham."', '".$xl_da_lieu."', '".$bs_da_lieu."',"
+        ." '".$kq."', '".$dg."', '".$phan_loai."', '".$cac_benh_tat."', '".$bs_kl."');";
+      } else{
+        $sql = "update tbl_kham_suc_khoe "
+              ." set tien_su_benh= '".$tien_su_benh."',chieu_cao='".$chieu_cao."',can_nang='".$can_nang."',bmi='".$bmi."',mach='".$mach."',huyet_ap='".$huyet_ap."',tl_phan_loai='".$tl_phan_loai."',"
+              ." tuan_hoan_kham='".$tuan_hoan_kham."', xl_tuan_hoan='".$xl_tuan_hoan."',bs_tuan_hoan='".$bs_tuan_hoan."',"
+              ." ho_hap_kham ='".$ho_hap_kham."',xl_ho_hap='".$xl_ho_hap."',bs_ho_hap='".$bs_ho_hap."',"
+              ." tieu_hoa_kham ='".$tieu_hoa_kham."',xl_tieu_hoa='".$xl_tieu_hoa."',bs_tieu_hoa='".$bs_tieu_hoa."',"
+              ." than_tiet_nieu_kham='".$than_tiet_nieu_kham."',xl_than_tiet_nieu='".$xl_than_tiet_nieu."',bs_than_tiet_nieu='".$bs_than_tiet_nieu."',"
+              ." noi_tiet_kham='".$noi_tiet_kham."',xl_noi_tiet='".$xl_noi_tiet."',bs_noi_tiet='".$bs_noi_tiet."',"
+              ." co_xuong_khop_kham = '".$co_xuong_khop_kham."',xl_co_xuong_khop='".$xl_co_xuong_khop."',bs_co_xuong_khop='".$bs_co_xuong_khop."',"
+              ." than_kinh_kham='".$than_kinh_kham."',xl_than_kinh='".$xl_than_kinh."',bs_than_kinh='".$bs_than_kinh."',"
+              ." tam_than_kham='".$tam_than_kham."',xl_tam_than='".$xl_tam_than."',bs_tam_than='".$bs_tam_than."',"
+              ." kk_mp_kham='".$kk_mp_kham."',kk_mt_kham='".$kk_mt_kham."',ck_mp_kham='".$ck_mp_kham."',ck_mt_kham='".$ck_mt_kham."',benh_mat_kham='".$benh_mat_kham."',xl_mat='".$xl_mat."',bs_mat='".$bs_mat."',"
+              ." tt_nt_kham='".$tt_nt_kham."',tt_nth_kham='".$tt_nth_kham."',tp_nt_kham='".$tp_nt_kham."',tp_nth_kham='".$tp_nth_kham."',tmh_benh='".$tmh_benh."',xl_tmh='".$xl_tmh."',bs_tmh='".$bs_tmh."',"
+              ." rmh_ht='".$rhm_ht."',rmh_hd='".$rmh_hd."',rhm_benh='".$rmh_benh."',xl_rhm='".$xl_rhm."',bs_rhm='".$bs_rhm."',"
+              ." da_lieu_kham='".$da_lieu_kham."',xl_da_lieu='".$xl_da_lieu."',bs_da_lieu='".$bs_da_lieu."',"
+              ." kq ='".$kq."',dg = '".$dg."',phan_loai='".$phan_loai."',cac_benh_tat='".$cac_benh_tat."',bs_kl='".$bs_kl."'";
+      }
+      return $this->execute_query($sql);
+    }
 
 }
 ?>

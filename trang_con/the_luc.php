@@ -38,7 +38,7 @@
       <div class="col-md-9">
       </div>
       <div class="col-md-3">
-          <a data-toggle="tab"  href="#lam-sang" class="btn btn-warning">Tiếp tục</a>
+          <a data-toggle="tab"  href="#lam-sang" class="btn btn-warning btnNext">Tiếp tục</a>
       </div>
     </div>
   </div>

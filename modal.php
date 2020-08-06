@@ -7,12 +7,12 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <label for="" hidden id="ma_nv"></label>
+
       <div class="modal-body">
         <div style="width:100%;">
           <h4 id="ho_ten" class="text-danger text-uppercase text-right"></h4>
         </div>
-        <form id="formKB">
+        <form id="formKB" method="post" action="./xu-ly/kham.php">
 
           <ul class="nav nav-tabs">
             <li class="active"><a data-toggle="tab" href="#tsbt">I. T.SỬ B.TẬT</a></li>
@@ -23,6 +23,7 @@
           </ul>
 
           <div class="tab-content">
+            <input type="text" name="ma_nv" id="ma_nv" hidden>
             <div id="tsbt" class="tab-pane fade in active">
               <?php include './trang_con/tien_su_benh_tat.php' ?>
             </div>
@@ -42,7 +43,7 @@
 
         </div>
 
-      </form>  <!---------END FORM ---------->
+      </form>  <!---------END FORM ---------->    
     </div>
   </div>
 </div>

@@ -1,4 +1,4 @@
-<div class="panel panel-info">
+<div class="panel panel-primary">
   <div class="panel-heading"><h4 class="font-weight-bold">KHÁM LÂM SÀNG</h4> </div>
   <div class="panel-body">
     <!---panel khám nội khoa -->
@@ -50,7 +50,7 @@
         <div class="form-row">
           <div class="col-md-6 mb-6">
             <label for="validationServer01">c. Tiêu hóa</label>
-            <input type="text" class="form-control is-valid" id="tieu_hoa_kham" placeholder="Tiêu hóa" value="bụng mềm" required>
+            <input type="text" class="form-control is-valid" id="tieu_hoa_kham" name="tieu_hoa_kham" placeholder="Tiêu hóa" value="bụng mềm" required>
           </div>
           <div class="col-md-2 mb-2">
             <label for="validationServer02">Phân loại</label>
@@ -69,7 +69,7 @@
         <div class="form-row">
           <div class="col-md-6 mb-6">
             <label for="validationServer01">d. Thận - tiết niệu</label>
-            <input type="text" class="form-control is-valid" id="than_tiet_nieu_kham" placeholder="Thận - tiết niệu" value="chạm thận....???" required>
+            <input type="text" class="form-control is-valid" id="than_tiet_nieu_kham" name="than_tiet_nieu_kham" placeholder="Thận - tiết niệu" value="chạm thận....???" required>
           </div>
           <div class="col-md-2 mb-6">
             <label for="validationServer02">Phân loại</label>
@@ -88,7 +88,7 @@
         <div class="form-row">
           <div class="col-md-6 mb-6">
             <label for="validationServer01">đ. Nội tiết</label>
-            <input type="text" class="form-control is-valid" id="noi_tiet_kham" placeholder="Nội tiết" value="bình thường" required>
+            <input type="text" class="form-control is-valid" id="noi_tiet_kham" name="noi_tiet_kham" placeholder="Nội tiết" value="bình thường" required>
           </div>
           <div class="col-md-2 mb-2">
             <label for="validationServer02">Phân loại</label>
@@ -170,7 +170,7 @@
           </div>
           <div class="col-md-3 mb-3">
             <label for="validationServer01">Không kính: mắt trái</label>
-            <input type="text" class="form-control is-valid" id="kk_mt_kham" placeholder="Mắt trái" value="10/10" required>
+            <input type="text" class="form-control is-valid" id="kk_mt_kham" name="kk_mt_kham" placeholder="Mắt trái" value="10/10" required>
           </div>
           <div class="col-md-3 mb-3">
             <label for="validationServer01">Có kính: mắt phải</label>
@@ -212,7 +212,7 @@
             </div>
             <div class="col-md-3 mb-3">
               <label for="validationServer01">Tai trái: nói thầm</label>
-              <input type="text" class="form-control is-valid" id="tt_nth_kham" placeholder="Tai trái: nói thầm" value="0.5m" required>
+              <input type="text" class="form-control is-valid" id="tt_nth_kham" name="tt_nth_kham" placeholder="Tai trái: nói thầm" value="0.5m" required>
             </div>
             <div class="col-md-3 mb-3">
               <label for="validationServer01">Tai phải: nói thường</label>
@@ -310,7 +310,7 @@
       <div class="col-md-9">
       </div>
       <div class="col-md-3">
-          <a data-toggle="tab"  href="#cls" class="btn btn-warning">Tiếp tục</a>
+          <a data-toggle="tab"  href="#cls" class="btn btn-warning btnNext">Tiếp tục</a>
       </div>
     </div>
   </div>
