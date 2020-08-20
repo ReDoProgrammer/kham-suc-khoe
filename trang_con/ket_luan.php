@@ -9,7 +9,7 @@
     <div class="form-row">
       <div class="col-md-12 mb-12">
           <label for="validationServer01">Các bệnh, tật (nếu có):</label>
-        <textarea class="form-control" rows="10" id="tsbt" name="tsbt"></textarea>
+        <textarea class="form-control" rows="10" id="cac_benh_tat" name="cac_benh_tat"></textarea>
       </div>
     </div>
   </div>

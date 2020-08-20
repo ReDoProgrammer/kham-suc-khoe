@@ -18,5 +18,11 @@ if(isset($_POST["action"])){
     $nam = $_POST["nam"];
     echo $object->get_kqksk($nam);
   }
+
+  if($_POST["action"] == "get_kqnv") {
+    $ma_nv = $_POST["ma_nv"];
+    $nam = $_POST["nam"];
+    echo $object->get_kqksknv($ma_nv,$nam);
+  }
 }
 ?>

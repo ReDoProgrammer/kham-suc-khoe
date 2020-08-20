@@ -40,10 +40,8 @@
               <?php include './trang_con/ket_luan.php' ?>
             </div>
           </div>
-
         </div>
-
-      </form>  <!---------END FORM ---------->    
+      </form>  <!---------END FORM ---------->
     </div>
   </div>
 </div>

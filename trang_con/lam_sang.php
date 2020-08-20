@@ -291,12 +291,12 @@
           </div>
           <div class="col-md-2 mb-2">
             <label for="validationServer01">Phân loại</label>
-            <select id="xl_rhm" name="xl_rhm" class="form-control xl">
+            <select id="xl_da_lieu" name="xl_da_lieu" class="form-control xl">
             </select>
           </div>
           <div class="col-md-4 mb-6">
             <label for="validationServer01">Bác sĩ khám</label>
-            <select id="bs_rhm" name="bs_rhm" class="form-control dsbs">
+            <select id="bs_da_lieu" name="bs_da_lieu" class="form-control dsbs">
             </select>
           </div>
         </div>

@@ -5,6 +5,7 @@
   <title></title>
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/fontawesome/css/font-awesome.min.css">
   <script src="./assets/js/jquery-3.5.1.js" charset="utf-8"></script>
   <script src="./assets/js/bootstrap.min.js" charset="utf-8"></script>
 </head>
