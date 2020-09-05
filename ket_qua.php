@@ -172,6 +172,7 @@ function kqNV(ma_nv,nam){
     },
     success:function(data){
        let nv = $.parseJSON(data);
+       $('#ma_nv').val(nv.ma_nv);
        $('#tien_su_benh').val(nv.tien_su_benh);;
        $('#chieu_cao').val(nv.chieu_cao);
        $('#can_nang').val(nv.can_nang);

@@ -62,6 +62,7 @@ function tinh_bmi(){
 
 $('#btnXacNhan').click(function(e){
   e.preventDefault();
+  let ma_nv = $('#ma_nv').val();
   let nam = new Date().getFullYear();
   let tien_su_benh = $('#tien_su_benh').val();
   let chieu_cao = $('#chieu_cao').val();

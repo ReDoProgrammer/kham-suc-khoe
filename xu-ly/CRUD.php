@@ -144,7 +144,7 @@ class Crud
     $output = '{';
       while($row = mysqli_fetch_object($result))
       {
-
+        $output .='"ma_nv":"'.$row->ma_nv.'",';
         $output .='"ho_ten":"'.$row->ho_ten.'",';
         $output .='"tien_su_benh":"'.$row->tien_su_benh.'",';
         $output .='"chieu_cao":"'.$row->chieu_cao.'",';
