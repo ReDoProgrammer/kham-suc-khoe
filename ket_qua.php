@@ -246,11 +246,13 @@ function kqNV(ma_nv,nam){
 
 //sự kiện của button xóa ứng với mỗi dòng
 $('#tblKetQua').on('click', '.btnXoa', function() {
+  //lấy mã nhân viên để gán kết quả xóa
   ma_nv =  $(this).attr('id');
+  //lấy họ tên nhân viên để hiện thị câu hỏi
   let ho_ten = $(this).attr('data-name');
+  //lấy năm khám sức khỏe
   let nam = $('#nam').val();
-  console.log(ho_ten);
-  var txt;
+
    var r = confirm("Xóa kết quả khám sức khỏe của nhân viên "+ho_ten+" ?");
    if (r == true) {
      $.ajax({
@@ -276,6 +278,20 @@ $('#tblKetQua').on('click', '.btnSua', function() {
   load_bacsi();
   load_xeploai();
   kqNV(ma_nv,nam);
+});
+
+$('#tblKetQua').on('click', '.btnChiTiet', function() {
+  let ma_nv =  $(this).attr('id');
+  let nam = $('#nam').val();
+  let ho_ten = $(this).attr('data-name');
+  $("#modalKham").modal();
+  $('#ho_ten').empty();
+  $('#ho_ten').append('Nhân viên: '+ho_ten);
+  load_bacsi();
+  load_xeploai();
+  kqNV(ma_nv,nam);
+  $(".btnNext").hide();
+  $("#btnXacNhan").hide();
 });
 </script>
 <script src="./assets/js/cap-nhat.js" charset="utf-8"></script>

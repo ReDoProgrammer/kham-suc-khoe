@@ -61,7 +61,8 @@ class Crud
     {
       $output .='<tr>';
       $output .= '<td><button id="'.$row->ma_nv.'" data-name="'.$row->ho_ten.'"  class="btnXoa btn"><i class="fa fa-trash text-danger" aria-hidden="true"></i></button>';
-      $output .= '<button id="'.$row->ma_nv.'" data-name="'.$row->ho_ten.'" class="btnSua btn"><i class="fa fa-pencil-square-o text-warning" aria-hidden="true"></i></button></td>';
+      $output .= '<button id="'.$row->ma_nv.'" data-name="'.$row->ho_ten.'" class="btnSua btn"><i class="fa fa-pencil-square-o text-warning" aria-hidden="true"></i></button>';
+      $output .= '<button id="'.$row->ma_nv.'" data-name="'.$row->ho_ten.'"  class="btnChiTiet btn"><i class="fa fa-eye text-info" aria-hidden="true"></i></button>';
       $output .='<td class=" text-info"><strong>'.$row->ho_ten.'</strong></td>';
       $output .='<td class=" text-info">'.$row->tien_su_benh.'</td>';
       $output .='<td class=" text-info">'.$row->chieu_cao.'</td>';
