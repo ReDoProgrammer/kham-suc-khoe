@@ -269,6 +269,8 @@ $('#tblKetQua').on('click', '.btnXoa', function() {
 
 //sự kiện của button sửa ứng với mỗi dòng
 $('#tblKetQua').on('click', '.btnSua', function() {
+  $(".btnNext").show();
+  $("#btnXacNhan").show();
   let ma_nv =  $(this).attr('id');
   let nam = $('#nam').val();
   let ho_ten = $(this).attr('data-name');
