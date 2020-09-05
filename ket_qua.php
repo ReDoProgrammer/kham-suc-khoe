@@ -247,7 +247,22 @@ function kqNV(ma_nv,nam){
 //sự kiện của button xóa ứng với mỗi dòng
 $('#tblKetQua').on('click', '.btnXoa', function() {
   ma_nv =  $(this).attr('id');
-  console.log(ma_nv);
+  let ho_ten = $(this).attr('data-name');
+  let nam = $('#nam').val();
+  console.log(ho_ten);
+  var txt;
+   var r = confirm("Xóa kết quả khám sức khỏe của nhân viên "+ho_ten+" ?");
+   if (r == true) {
+     $.ajax({
+       url:"./xu-ly/xoa.php",
+       method:"POST",
+       data:{ma_nv:ma_nv,nam:nam},
+       success:function(data){
+         alert(data);
+         loadData(nam);
+       }
+     });
+   }
 });
 
 //sự kiện của button sửa ứng với mỗi dòng
