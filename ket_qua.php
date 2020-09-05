@@ -50,61 +50,6 @@
                 <th >H.áp</th>
                 <th >P.L</th>
 
-                <!-- <th >Tuần hoàn</th>
-                <th >XL</th>
-                <th >Bác sĩ khám</th>
-                <th >Hô hấp</th>
-                <th >XL</th>
-                <th >Bác sĩ khám</th>
-                <th >Tiêu hóa</th>
-                <th >XL</th>
-                <th >Bác sĩ khám</th>
-                <th >Thận - tiết niệu</th>
-                <th >XL</th>
-                <th >Bác sĩ khám</th>
-                <th >Nội tiết</th>
-                <th >XL</th>
-                <th >Bác sĩ khám</th>
-                <th >Cơ - xương - khớp</th>
-                <th >XL</th>
-                <th >Bác sĩ khám</th>
-                <th >Thần kinh</th>
-                <th >XL</th>
-                <th >Bác sĩ khám</th>
-                <th >Tâm thần</th>
-                <th >XL</th>
-                <th >Bác sĩ khám</th>
-                <th >Mắt phải (không kính)</th>
-                <th >Mắt trái (không kính)</th>
-                <th >Mắt phải (có kính)</th>
-                <th >Mắt trái (có kính)</th>
-                <th >Bệnh về mắt</th>
-                <th >XL</th>
-                <th >Bác sĩ khám</th>
-                <th >Tai trái (nói thường)</th>
-                <th >Tai phải (nói thường)</th>
-                <th >Tai trái (nói thầm)</th>
-                <th >Tai phải (nói thầm)</th>
-                <th >Bệnh TMH</th>
-                <th >XL</th>
-                <th >Bác sĩ khám</th>
-                <th >Hàm trên</th>
-                <th >Hàm dưới</th>
-                <th >Bệnh RHM</th>
-                <th >XL</th>
-                <th >Bác sĩ khám</th>
-
-                <th >Bệnh da liễu</th>
-                <th >XL</th>
-                <th >Bác sĩ khám</th>
-
-                <th >Kết quả</th>
-                <th >Đánh giá</th>
-                <th >P.Loại</th>
-                <th >Các b.tật</th>
-                <th >Bác sĩ kết luận</th> -->
-
-
               </tr>
             </thead>
             <tbody id='kqksk'>

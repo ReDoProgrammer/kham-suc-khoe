@@ -1,11 +1,12 @@
-$('.btnNext').click(function(){
-  let href = $(this).attr("href");
-  console.log(href);
-  // $('ul a').each(function() {
-  //   if (this.href === href) {
-  //     $(this).addClass('active');
-  //   }
-  // });
+$('.btnNext').on('click', function() {
+  var currentActive = $('.menu li.active'); // get current active
+  currentActive.removeClass('active'); // remove class active
+
+  if (currentActive.is(':last-child')) {
+    $('li').first().addClass('active'); // add class to first li if last child
+  } else {
+    currentActive.next('li').addClass('active'); // otherwise add active to next li
+  }
 });
 
 //hiển thị danh sách bác sĩ lên các select option

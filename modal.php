@@ -14,12 +14,12 @@
         </div>
         <form id="formKB" method="post" action="./xu-ly/kham.php">
 
-          <ul class="nav nav-tabs">
-            <li class="active"><a data-toggle="tab" href="#tsbt">I. T.SỬ B.TẬT</a></li>
-            <li><a data-toggle="tab" href="#the-luc">II. THỂ LỰC</a></li>
-            <li><a data-toggle="tab" href="#lam-sang">III. LÂM SÀNG</a></li>
-            <li><a data-toggle="tab" href="#cls">IV. CẬN LÂM SÀNG</a></li>
-            <li><a data-toggle="tab" href="#ket-luan">V. KẾT LUẬN</a></li>
+          <ul class="nav nav-tabs menu">
+            <li class="active" id="li-tsbt"><a data-toggle="tab" href="#tsbt">I. T.SỬ B.TẬT</a></li>
+            <li id="li-the-luc"><a data-toggle="tab" href="#the-luc">II. THỂ LỰC</a></li>
+            <li id="li-lam-sang"><a data-toggle="tab" href="#lam-sang">III. LÂM SÀNG</a></li>
+            <li id="li-cls"><a data-toggle="tab" href="#cls">IV. CẬN LÂM SÀNG</a></li>
+            <li id="li-ket-luan"><a data-toggle="tab" href="#ket-luan">V. KẾT LUẬN</a></li>
           </ul>
 
           <div class="tab-content">
